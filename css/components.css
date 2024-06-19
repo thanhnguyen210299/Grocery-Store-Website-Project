@@ -165,6 +165,62 @@ html{
     scroll-padding-top: 6.5rem;
 }
 
+.form-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.form-container h1{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    font-size: 10rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.form-container .gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: var(--green);
+    
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #3aada8, #a2d5ac);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+} 
+
+.form-container .btn-start{
+    display: block;
+    width: 50%;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1.3rem 3rem;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--green);
+}
+
+.form-container .btn-start:hover{
+    background-color: black;
+}
+
 section{
     padding: 3rem 2rem;
     max-width: 1200px;
